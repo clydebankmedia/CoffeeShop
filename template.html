@@ -3,49 +3,91 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home</title>
+    <title>Template</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- ICON -->
+    <link rel="icon" href="images/coffee-cup-icon.png" type="image/png">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/efdce23158.js" crossorigin="anonymous"></script>
+    <!-- bootstap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Plugins for bootstap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JQ -->
+    <script src="jquery-3.5.1.js"></script>
+    <!-- Darkmode -->
+    <script src="darkmode.js"></script>
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="title-header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
-                    <img src="images/coffee-cup-icon.png" alt="Logo">
-                </a>
+    <header>
+        <nav class="navbar">
+            <div class="title-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                        <img src="images/coffee-cup-icon.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="title">ClydeBank Coffee Shop</div>
             </div>
-            <div class="title">ClydeBank Coffee Shop</div>
-        </div>
-    </div>
-</header>
-<nav>
-    <div class="container">
-        <ul>
-            <li class="active"><a href="index.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+        
+            <div>
+                <ul  id="nav-list" type="none">
+                    <li class="darkmode"><i class="fas fa-adjust"></i></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
 <main>
     <div class="container">
 <!-- CONTENT GOES HERE -->
     </div>
 </main>
 <footer>
-    <div class="container">
-        <h2 class="text-white">Contact</h2>
-        <address>
-            <ul>
-                <li>Address: 4578 Marmora Road,Glasgow D04 89GR</li>
-                <li>Phone:<a href="tel:#"> 800-2345-6789</a></li>
-                <li>Opening Hours: 6am-4pm PST M-Th; 6am-3pm PST Fri</li>
-                <li>E-mail:<a href="mailto:#"> info@demolink.org</a></li>
+    <div class="contact">
+        <br>
+        <h2 class="contact-heading"><i class="fas fa-headset"></i> &nbsp; &nbsp; Contact</h2>
+        <br>
+        <br>
+        <div id="contact-content">
+        <div id="address">
+            <h5>Address: </h5>
+                    4578 Marmora Road,
+                    <br>Glasgow
+                    <br> D04 89GR
+                    <br>
+                    <br>
+                <div id="contact-dets">
+                <div><h5>Phone:</h5><a href="tel:#" > 
+                    800-2345-6789
+                </a></div>
+                <br>
+                <div><h5>E-mail:</h5><a href="mailto:#"> 
+                    info@demolink.org
+                </a></div>
+            </div>
+            
+        </div>
+        <div id="opening">
+            <h5> Opening Hours:</h5>
+            <br>
+            <ul id="timing" type="none">
+                <li>Monday<span>6AM - 4PM</span></li>
+                <li>Tuesday<span>6AM - 4PM</span></li>
+                <li>Wednesday<span>6AM - 4PM</span></li>
+                <li>Thursday<span>6AM - 4PM</span></li>
+                <li>Friday<span>6AM - 3PM</span></li>
+                <li>Saturday<span>CLOSED</span></li>
+                <li>Sunday<span>CLOSED</span></li>
             </ul>
-        </address>
+        </div>
+    </div>
     </div>
 </footer>
 </body>

@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $(".fa-adjust").click(function(){
+        $("body").toggleClass("dark");
+        $("main").toggleClass("dark");
+        $(".navbar").toggleClass("dark");
+        $(".contact").toggleClass("dark-grad");
+        $(".event-item").toggleClass("dark-grad");
+        $(".image-text").toggleClass("dark-carousel")
+    })
+}
+)
